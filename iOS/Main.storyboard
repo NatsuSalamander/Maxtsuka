@@ -115,45 +115,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnA-Ca-6x9">
-                                <rect key="frame" x="299" y="617" width="60" height="30"/>
-                                <color key="backgroundColor" red="0.26033420140000002" green="0.25853579669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhJ-Wc-1UP">
+                                <rect key="frame" x="315" y="637" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="5oZ-AR-z5o"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kv6-Cu-suD"/>
+                                    <constraint firstAttribute="width" constant="60" id="Nho-Uv-BGy"/>
                                 </constraints>
                                 <state key="normal" title="GO">
                                     <color key="titleColor" red="0.96282302590000002" green="0.98343560080000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l6t-GE-5hg">
-                                <rect key="frame" x="16" y="617" width="275" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EvM-GA-eds">
+                                <rect key="frame" x="0.0" y="637" width="315" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Fp-TV-g4O"/>
+                                    <constraint firstAttribute="width" constant="315" id="7TC-C8-aLV"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6D6-Dm-bvf">
-                                <rect key="frame" x="16" y="28" width="343" height="581"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmc-wt-Vnv">
+                                <rect key="frame" x="0.0" y="28" width="375" height="609"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wnA-Ca-6x9" firstAttribute="leading" secondItem="l6t-GE-5hg" secondAttribute="trailing" constant="8" symbolic="YES" id="21P-Ck-ajd"/>
-                            <constraint firstItem="6D6-Dm-bvf" firstAttribute="leading" secondItem="l6t-GE-5hg" secondAttribute="leading" id="7bZ-Qb-0NT"/>
-                            <constraint firstAttribute="bottom" secondItem="l6t-GE-5hg" secondAttribute="bottom" constant="20" symbolic="YES" id="8dz-fu-PAg"/>
-                            <constraint firstItem="6D6-Dm-bvf" firstAttribute="top" secondItem="m86-AO-iUd" secondAttribute="bottom" constant="8" id="IPN-cY-z70"/>
-                            <constraint firstItem="wnA-Ca-6x9" firstAttribute="trailing" secondItem="I3P-d1-pn8" secondAttribute="trailingMargin" id="KzE-n2-6Bz"/>
-                            <constraint firstItem="l6t-GE-5hg" firstAttribute="leading" secondItem="I3P-d1-pn8" secondAttribute="leadingMargin" id="WTP-lB-lsO"/>
-                            <constraint firstItem="l6t-GE-5hg" firstAttribute="top" secondItem="6D6-Dm-bvf" secondAttribute="bottom" constant="8" id="Yc1-vc-Kze"/>
-                            <constraint firstItem="l6t-GE-5hg" firstAttribute="top" secondItem="wnA-Ca-6x9" secondAttribute="top" id="lU9-mg-Bod"/>
-                            <constraint firstItem="6D6-Dm-bvf" firstAttribute="trailing" secondItem="wnA-Ca-6x9" secondAttribute="trailing" id="rYn-JH-n9b"/>
+                            <constraint firstItem="EvM-GA-eds" firstAttribute="leading" secondItem="I3P-d1-pn8" secondAttribute="leading" id="1mM-u8-9bJ"/>
+                            <constraint firstItem="5nl-rn-h4z" firstAttribute="top" secondItem="uhJ-Wc-1UP" secondAttribute="bottom" id="6xU-iN-hO7"/>
+                            <constraint firstItem="EvM-GA-eds" firstAttribute="leading" secondItem="I3P-d1-pn8" secondAttribute="leading" id="769-cL-FQF"/>
+                            <constraint firstItem="uhJ-Wc-1UP" firstAttribute="top" secondItem="EvM-GA-eds" secondAttribute="top" id="7bn-1v-JB4"/>
+                            <constraint firstItem="uhJ-Wc-1UP" firstAttribute="leading" secondItem="EvM-GA-eds" secondAttribute="trailing" id="BgR-iT-1Jn"/>
+                            <constraint firstItem="5nl-rn-h4z" firstAttribute="top" secondItem="uhJ-Wc-1UP" secondAttribute="bottom" id="HVI-gK-6jX"/>
+                            <constraint firstItem="kmc-wt-Vnv" firstAttribute="leading" secondItem="I3P-d1-pn8" secondAttribute="leading" id="IAV-hh-6Bn"/>
+                            <constraint firstItem="kmc-wt-Vnv" firstAttribute="top" secondItem="m86-AO-iUd" secondAttribute="bottom" constant="8" symbolic="YES" id="SVl-w4-yaE"/>
+                            <constraint firstAttribute="trailing" secondItem="uhJ-Wc-1UP" secondAttribute="trailing" id="TAh-xY-Gpq"/>
+                            <constraint firstItem="5nl-rn-h4z" firstAttribute="top" secondItem="EvM-GA-eds" secondAttribute="bottom" id="cbO-dm-Yvx"/>
+                            <constraint firstItem="uhJ-Wc-1UP" firstAttribute="top" secondItem="EvM-GA-eds" secondAttribute="top" id="fK3-wP-Hwi"/>
+                            <constraint firstItem="EvM-GA-eds" firstAttribute="top" secondItem="kmc-wt-Vnv" secondAttribute="bottom" id="hGb-bp-pbj"/>
+                            <constraint firstAttribute="trailing" secondItem="kmc-wt-Vnv" secondAttribute="trailing" id="osq-Rj-pmH"/>
+                            <constraint firstAttribute="trailing" secondItem="uhJ-Wc-1UP" secondAttribute="trailing" id="uod-GN-zJE"/>
+                            <constraint firstItem="uhJ-Wc-1UP" firstAttribute="height" secondItem="EvM-GA-eds" secondAttribute="height" id="yEa-X5-rhc"/>
+                            <constraint firstItem="5nl-rn-h4z" firstAttribute="top" secondItem="EvM-GA-eds" secondAttribute="bottom" id="yUc-d2-hFn"/>
+                            <constraint firstItem="uhJ-Wc-1UP" firstAttribute="top" secondItem="EvM-GA-eds" secondAttribute="top" id="zWs-lU-vdj"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="btngo" destination="wnA-Ca-6x9" id="99V-TR-D4z"/>
-                        <outlet property="txtinput" destination="l6t-GE-5hg" id="0rb-IL-ckL"/>
-                        <outlet property="webview" destination="6D6-Dm-bvf" id="chy-wE-j20"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvR-iH-G8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
